@@ -6,7 +6,9 @@ import {
   FaReact,
   FaFire,
 } from "react-icons/fa"
+
 import { TypeAnimation } from "react-type-animation"
+
 import lavanya from "../assets/lavanya.png"
 
 function Hero() {
@@ -54,32 +56,33 @@ function Hero() {
 
           </h1>
 
-          {/* Paragraph */}
-         <div className="mt-8">
+          {/* Animated Text */}
+          <div className="mt-8">
 
-  <TypeAnimation
-    sequence={[
-      "Java Backend Developer",
-      2000,
-      "AI/ML Enthusiast",
-      2000,
-      "Problem Solver",
-      2000,
-      "Building Intelligent Systems",
-      2000,
-    ]}
-    wrapper="span"
-    speed={50}
-    repeat={Infinity}
-    className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-pink-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent"
-  />
+            <TypeAnimation
+              sequence={[
+                "Java Backend Developer",
+                2000,
+                "AI/ML Enthusiast",
+                2000,
+                "Problem Solver",
+                2000,
+                "Building Intelligent Systems",
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-pink-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent"
+            />
 
-  <p className="mt-6 text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl">
-    Passionate about creating elegant backend systems,
-    AI-driven applications, and modern software experiences.
-  </p>
+            <p className="mt-6 text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl">
+              Passionate about creating elegant backend systems,
+              AI-driven applications, and modern software experiences.
+            </p>
 
-</div>
+          </div>
+
           {/* Buttons */}
           <div className="flex gap-6 mt-10 flex-wrap">
 
@@ -99,6 +102,16 @@ function Hero() {
               className="px-8 py-4 border border-pink-400 text-pink-300 rounded-2xl hover:bg-pink-400 hover:text-black hover:shadow-[0_0_40px_rgba(236,72,153,0.5)] transition duration-300"
             >
               GitHub
+            </a>
+
+            {/* Resume Button */}
+            <a
+              href="/Lavanya_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 border border-cyan-400 text-cyan-300 rounded-2xl hover:bg-cyan-400 hover:text-black hover:shadow-[0_0_40px_rgba(34,211,238,0.5)] transition duration-300"
+            >
+              View Resume
             </a>
 
           </div>
@@ -121,40 +134,40 @@ function Hero() {
           {/* Image Glow */}
           <div className="absolute w-[340px] h-[340px] bg-gradient-to-r from-pink-500/30 to-cyan-500/30 rounded-full blur-3xl"></div>
 
-           
-           {/* Floating Icons */}
+          {/* Floating Icons */}
 
-<motion.div
-  animate={{ y: [0, -15, 0] }}
-  transition={{ repeat: Infinity, duration: 3 }}
-  className="absolute -left-10 top-10 text-5xl text-orange-400 bg-white/10 p-4 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(255,165,0,0.4)]"
->
-  <FaJava />
-</motion.div>
+          <motion.div
+            animate={{ y: [0, -15, 0] }}
+            transition={{ repeat: Infinity, duration: 3 }}
+            className="absolute -left-10 top-10 text-5xl text-orange-400 bg-white/10 p-4 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(255,165,0,0.4)]"
+          >
+            <FaJava />
+          </motion.div>
 
-<motion.div
-  animate={{ y: [0, 15, 0] }}
-  transition={{ repeat: Infinity, duration: 4 }}
-  className="absolute -right-8 top-20 text-5xl text-cyan-400 bg-white/10 p-4 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(34,211,238,0.4)]"
->
-  <FaReact />
-</motion.div>
+          <motion.div
+            animate={{ y: [0, 15, 0] }}
+            transition={{ repeat: Infinity, duration: 4 }}
+            className="absolute -right-8 top-20 text-5xl text-cyan-400 bg-white/10 p-4 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(34,211,238,0.4)]"
+          >
+            <FaReact />
+          </motion.div>
 
-<motion.div
-  animate={{ y: [0, -10, 0] }}
-  transition={{ repeat: Infinity, duration: 3.5 }}
-  className="absolute left-0 bottom-10 text-5xl text-yellow-300 bg-white/10 p-4 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(255,255,0,0.4)]"
->
-  <FaPython />
-</motion.div>
+          <motion.div
+            animate={{ y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 3.5 }}
+            className="absolute left-0 bottom-10 text-5xl text-yellow-300 bg-white/10 p-4 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(255,255,0,0.4)]"
+          >
+            <FaPython />
+          </motion.div>
 
-<motion.div
-  animate={{ y: [0, 12, 0] }}
-  transition={{ repeat: Infinity, duration: 4.5 }}
-  className="absolute right-0 bottom-0 text-5xl text-pink-400 bg-white/10 p-4 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(236,72,153,0.4)]"
->
-  <FaFire />
-</motion.div>
+          <motion.div
+            animate={{ y: [0, 12, 0] }}
+            transition={{ repeat: Infinity, duration: 4.5 }}
+            className="absolute right-0 bottom-0 text-5xl text-pink-400 bg-white/10 p-4 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(236,72,153,0.4)]"
+          >
+            <FaFire />
+          </motion.div>
+
           {/* Image */}
           <img
             src={lavanya}
@@ -166,24 +179,24 @@ function Hero() {
 
       </div>
 
-{/* Scroll Indicator */}
+      {/* Scroll Indicator */}
 
-<motion.div
-  animate={{ y: [0, 10, 0] }}
-  transition={{
-    repeat: Infinity,
-    duration: 2,
-  }}
-  className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-gray-400"
->
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+        }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-gray-400"
+      >
 
-  <span className="text-sm tracking-[0.3em] uppercase mb-3">
-    Scroll
-  </span>
+        <span className="text-sm tracking-[0.3em] uppercase mb-3">
+          Scroll
+        </span>
 
-  <div className="w-[2px] h-14 bg-gradient-to-b from-pink-400 to-cyan-400 rounded-full"></div>
+        <div className="w-[2px] h-14 bg-gradient-to-b from-pink-400 to-cyan-400 rounded-full"></div>
 
-</motion.div>
+      </motion.div>
 
     </section>
   )
