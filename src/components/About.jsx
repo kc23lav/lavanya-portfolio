@@ -157,13 +157,13 @@ function About() {
 
               <div className="bg-white/5 border border-cyan-500/10 rounded-2xl p-6 text-center backdrop-blur-md hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] transition duration-300">
 
-                <h3 className="text-3xl font-bold text-cyan-300">
-                  New technologies and innovation 
-                </h3>
+               <h3 className="text-2xl font-bold text-cyan-300">
+  Focus Area
+</h3>
 
-                <p className="text-gray-400 mt-2">
-                  Focus Area
-                </p>
+               <p className="text-gray-400 mt-2">
+  AI • Java • DSA
+</p>
 
               </div>
 

@@ -1,4 +1,7 @@
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 function Navbar() {
+const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="fixed top-0 w-full bg-black/40 backdrop-blur-md border-b border-pink-500/10 z-50">
 
@@ -13,7 +16,8 @@ function Navbar() {
         </a>
 
         {/* Links */}
-        <ul className="flex gap-10 text-white font-medium">
+        {/* Desktop Menu */}
+<ul className="hidden md:flex gap-10 text-white font-medium">
 
           <li className="hover:text-pink-300 hover:scale-105 transition duration-300 cursor-pointer">
             <a href="#about">About</a>
@@ -32,9 +36,47 @@ function Navbar() {
           </li>
 
         </ul>
+ 
+<button
+  className="md:hidden text-white text-2xl"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <FaTimes /> : <FaBars />}
+</button>
 
       </div>
 
+{menuOpen && (
+  <div className="md:hidden bg-black/95 backdrop-blur-lg">
+    <ul className="flex flex-col items-center gap-6 py-8 text-white font-medium">
+
+      <li>
+        <a href="#about" onClick={() => setMenuOpen(false)}>
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="#skills" onClick={() => setMenuOpen(false)}>
+          Skills
+        </a>
+      </li>
+
+      <li>
+        <a href="#projects" onClick={() => setMenuOpen(false)}>
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact" onClick={() => setMenuOpen(false)}>
+          Contact
+        </a>
+      </li>
+
+    </ul>
+  </div>
+)}
     </nav>
   )
 }

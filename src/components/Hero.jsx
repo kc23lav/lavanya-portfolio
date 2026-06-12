@@ -14,9 +14,20 @@ import lavanya from "../assets/lavanya.png"
 function Hero() {
   return (
     <section
-      id="home"
-      className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center px-8 pt-24"
-    >
+  id="home"
+  className="
+  relative
+  min-h-[85vh]
+  md:min-h-screen
+  bg-black
+  overflow-hidden
+  flex
+  items-center
+  justify-center
+  px-8
+  pt-24
+  "
+>
 
       {/* Glow Background */}
       <div className="absolute top-[-150px] left-[-150px] w-[500px] h-[500px] bg-pink-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -172,7 +183,21 @@ function Hero() {
           <img
             src={lavanya}
             alt="Lavanya"
-            className="relative w-[320px] h-[320px] object-cover rounded-full border-4 border-pink-400/30 shadow-[0_0_40px_rgba(236,72,153,0.4)] hover:scale-105 transition duration-500"
+            className="
+relative
+w-[250px]
+h-[250px]
+md:w-[320px]
+md:h-[320px]
+object-cover
+rounded-full
+border-4
+border-pink-400/30
+shadow-[0_0_40px_rgba(236,72,153,0.4)]
+hover:scale-105
+transition
+duration-500
+"
           />
 
         </motion.div>
