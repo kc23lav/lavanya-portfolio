@@ -117,7 +117,7 @@ function Hero() {
 
             {/* Resume Button */}
             <a
-              href="/Lavanya_Resume.pdf"
+              href="/Resume_LavanyaTyagi.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 border border-cyan-400 text-cyan-300 rounded-2xl hover:bg-cyan-400 hover:text-black hover:shadow-[0_0_40px_rgba(34,211,238,0.5)] transition duration-300"
